@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Bar, PolarArea } from 'react-chartjs-2';
 import 'chart.js/auto';
 
 const RepaymentOverview = ({ data }) => {
@@ -18,7 +18,7 @@ const RepaymentOverview = ({ data }) => {
     ],
   };
 
-  return <Bar data={chartData} />;
+  return <PolarArea data={chartData} />;
 };
 
 export default RepaymentOverview;
