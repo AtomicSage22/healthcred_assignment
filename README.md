@@ -64,17 +64,9 @@ The HealthCRED Dashboard fetches data from the HealthCRED API to present key met
     ```sh
     Open your browser and navigate to http://localhost:5173.
 
-## Project Structure
-    healthcred-dashboard/
-├── public/              # Static assets
-├── src/
-│   ├── api/             # API call functions
-│   ├── components/      # Reusable components
-│   ├── pages/           # Page components
-│   ├── App.jsx          # Main app component
-│   ├── index.css        # Global styles
-│   └── main.jsx         # Entry point
-├── .gitignore           # Files to ignore in the repository
-├── package.json         # Project metadata and dependencies
-├── tailwind.config.js   # Tailwind CSS configuration
-└── vite.config.js       # Vite configuration
+## Customization
+1. **Styling**:
+Tailwind CSS is used for styling. You can customize the styles by modifying the classes in the component files or by updating the Tailwind configuration in tailwind.config.js.
+
+2. **Chart Customization**:
+The charts are implemented using Chart.js. You can customize the appearance and behavior of the charts by adjusting the options in the respective component files, such as RepaymentOverview.jsx, ClaimsStatus.jsx, and LimitUtilization.jsx.
